@@ -105,6 +105,12 @@ As metas de usabilidade definidas para o sistema incluem:
 - pass: 1234 
 - usuario: maria 
 - pass: 9999
+  
+## comado para inicializacao
+
+- npm install
+  
+- npm run dev
 
 
 
