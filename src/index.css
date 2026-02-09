@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 270 60% 55%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 30% 15%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 150 80% 50%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 30% 18%;
+    --input: 217 30% 18%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 30% 15%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 217 30% 18%;
+    --sidebar-ring: 217 91% 60%;
+
+    --neon-green: 150 80% 50%;
+    --neon-blue: 217 91% 60%;
+    --neon-purple: 270 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glow-blue {
+    box-shadow: 0 0 20px hsl(217 91% 60% / 0.3), 0 0 60px hsl(217 91% 60% / 0.1);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 20px hsl(150 80% 50% / 0.3), 0 0 60px hsl(150 80% 50% / 0.1);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(270 60% 55% / 0.3), 0 0 60px hsl(270 60% 55% / 0.1);
+  }
+
+  .text-glow-green {
+    text-shadow: 0 0 10px hsl(150 80% 50% / 0.5);
+  }
+}
